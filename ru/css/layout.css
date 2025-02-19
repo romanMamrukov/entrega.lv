@@ -1,0 +1,426 @@
+/* ========================= 1. Site Styles ========================= */
+
+/* Page Styles */
+
+* { 
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+	box-sizing:border-box;
+	margin: 0px;
+	padding:0px;
+}
+body {
+	font-family:Arial,sans-serif;
+	color:#5a5a5a;
+	font-size:15px;
+	line-height:21px;
+
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#E2A920;
+	font-family:Arial,sans-serif;
+	font-weight:normal;
+	text-rendering:auto;
+}
+
+figure { margin:0px; }
+	figure img { width:100%; }
+
+ul { margin:0px; }
+
+/* Links */
+
+a, a:visited {
+	color:#41abce;
+	-webkit-transition:background .2s ease, background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out, outline .2s ease;
+	-moz-transition:background .2s ease, background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out, outline .2s ease;
+	-ms-transition:background .2s ease, background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out, outline .2s ease;
+	-o-transition:background .2s ease, background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out, outline .2s ease;
+	transition:background .2s ease, background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out, outline .2s ease;
+}
+a:hover {
+	text-decoration:none;
+	color:#4a4a4a;
+}
+
+/* Site Elements */
+
+input[type="text"], input[type="password"], input[type="email"] {
+	height:40px;
+	padding:0px 12px;
+	font-family:'Titillium Web', Arial, sans-serif;
+	outline:none;
+	font-size:14px;
+	color:#5a5a5a;
+	border:1px solid #e0e0e0;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:0px;
+	-moz-box-shadow:inset -1px 1px 1px #e0e0e0;
+	-webkit-box-shadow:inset -1px 1px 1px #e0e0e0;
+	box-shadow:inset -1px 1px 1px #e0e0e0;
+}
+textarea {
+	padding:12px;
+	font-family:'Titillium Web', Arial, sans-serif;
+	border:1px solid #e0e0e0;
+	outline:none;
+	font-size:14px;
+	color:#7a7a7a;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:0px;
+	-moz-box-shadow:inset -1px 1px 1px #e0e0e0;
+	-webkit-box-shadow:inset -1px 1px 1px #e0e0e0;
+	box-shadow:inset -1px 1px 1px #e0e0e0;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+	border:1px solid #c0c0c0;
+	-moz-box-shadow:inset -1px 1px 1px #e0e0e0;
+	-webkit-box-shadow:inset -1px 1px 1px #e0e0e0;
+	box-shadow:inset -1px 1px 1px #e0e0e0;	
+}
+
+.btn {
+	background-color:#2186c6;
+	padding:9px 20px;
+	color:#FFF !important;
+	line-height:40px;
+	font-size:13px;
+	font-family:'PT Sans', Arial, sans-serif;
+	text-transform:uppercase;
+	border:1px solid #2082c0;
+	text-shadow:1px 1px 1px #0b6aa5;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background-repeat:repeat-x;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#3aa1e2), to(#2186c6));
+	background:-webkit-linear-gradient(top, #3aa1e2, #2186c6);
+	background:-moz-linear-gradient(top, #3aa1e2, #2186c6);
+	background:-o-linear-gradient(top, #3aa1e2, #2186c6);
+}
+input[type="button"].btn, input[type="submit"].btn, input[type="reset"].btn, button.btn {
+	line-height:1;
+	padding:12px 20px 13px;
+}
+.btn:hover {
+	background-color:#0078c3;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#1792e0), to(#0078c3));
+	background:-webkit-linear-gradient(top, #1792e0, #0078c3);
+	background:-moz-linear-gradient(top, #1792e0, #0078c3);
+	background:-o-linear-gradient(top, #1792e0, #0078c3);
+}
+.btn:disabled { background:#a0a0a0; }
+
+figure.figure-hover { position:relative; }
+	figure.figure-hover div {
+		position:absolute;
+		text-align:center;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background:url(../images/base-figure-overlay.png) repeat;
+		display:none;
+	}
+		figure.figure-hover div .icon-hover {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+		
+		/* Figure hover icon */		
+		figure.figure-hover div .icon-hover.icon-hover-zoom { background:url(../images/icon-hover-zoom.png) no-repeat center center; }
+		
+.scrollup {
+    width:54px;
+    height:54px;
+    position:fixed;
+    bottom:0px;
+    right:20px;
+	display:none;
+    text-indent:-9999px;
+    background:url('../images/back-to-top.png') no-repeat;
+	z-index:400;
+}
+
+
+
+/* ========================= 2. Header ========================= */
+
+#header {
+	text-align:center;
+	padding:0px;
+}
+	#header .logo {
+	left: 400px;
+    position: fixed;
+	display:none;
+    top: 100px;
+    width: 500px;
+    z-index: 100;}
+		#header .logo img { }
+	#header p {
+		font-family:'Titillium Web', Arial, sans-serif;
+		color:#a9a9a9;
+		font-size:18px;
+		line-height:33px;
+		margin:0px;	
+	}
+	#header .social { margin-bottom:20px; }
+		#header .social li {
+			list-style-type:none;
+			display:inline;	
+		}
+			#header .social li img {
+				width:22px;
+				height:22px;	
+			}
+/* ========================= 4. Main Section ========================= */
+
+#main {
+	background:#f9f9f9 url(../images/base-main.png) repeat;
+	padding:20px 0px 20px;
+}
+	#main .header {
+		text-align:center;
+		margin-bottom:40px;
+	}
+		#main .header h2 {
+			font-size:28px;
+			margin:0px 0px 5px;
+			font-weight:bold;
+			font-family:'PT Sans', Arial, sans-serif;
+			text-transform:uppercase;
+			line-height:34px;
+		}
+		#main .header p {
+			font-family:'Titillium Web', Arial, sans-serif;
+			margin:0px;
+			color:#333333;
+			font-size:18px;
+		}
+	#main .sep-border {
+		clear:both;
+		height:16px;
+		background:url(../images/sep-border-main.png) center center no-repeat;
+		margin-bottom:40px;
+	}
+		
+/* Features */
+
+#main .features {
+	padding:0px 0px 20px;
+	color:#333333;
+}
+	#main .features .item {
+		margin-bottom:40px;
+		overflow:hidden;
+	}
+		#main .features .item img {
+			float:left;
+			width:10%;	
+		}
+		#main .features .item .content {
+			float:right;
+			width:86%;
+		}
+			#main .features .item .content h4 {
+				font-size:20px;
+				font-weight:600;
+				margin-top:0px;
+				line-height:26px;
+			}
+			
+/* Projects */
+
+#main .projects {
+	position:relative;
+	padding-bottom:80px;
+}
+	#main .projects .flex-viewport { max-height:none; }
+	#main .projects figure {
+		margin-bottom:30px;
+		background-color:#FFF;
+		padding:4px;
+		border:1px solid #d0d0d0;
+	}
+		#main .projects figure.figure-hover div {
+			top:5px;
+			bottom:5px;
+			left:5px;
+			right:5px;
+		}
+	#main .projects .flex-control-nav { bottom:60px; }
+	#main .projects .flex-control-paging li a {
+		width:40px;
+		height:10px;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+		border-radius:0px;
+	}
+		
+/* Testimonials */
+
+#main .testimonials { padding-bottom:30px; }
+	#main .testimonials .item {
+		text-align:center;
+		padding-bottom:35px;
+	}
+		#main .testimonials .item img {
+			width:140px;
+			height:140px;
+			margin-bottom:25px;	
+		}
+		#main .testimonials .item p { margin-bottom:28px; }
+		#main .testimonials .item .name {
+			background:url(../images/border-name-testimonials.png) center center repeat-x;
+			-webkit-transition:background .2s ease;
+			-moz-transition:background .2s ease;
+			-ms-transition:background .2s ease;
+			-o-transition:background .2s ease;
+			transition:background .2s ease;
+		}
+		#main .testimonials .item:hover .name { background:url(../images/border-name-testimonials-hover.png) center center repeat-x; }
+			#main .testimonials .item .name span {
+				color:#FFF;
+				text-transform:uppercase;
+				font-size:13px;
+				font-weight:bold;
+				background-color:#e0e0e0;
+				padding:8px 15px;
+				line-height:18px;
+				-moz-border-radius:17px;
+				-webkit-border-radius:17px;
+				border-radius:17px;
+				-webkit-transition:background-color .2s ease;
+				-moz-transition:background-color .2s ease;
+				-ms-transition:background-color .2s ease;
+				-o-transition:background-color .2s ease;
+				transition:background-color .2s ease;
+			}
+			#main .testimonials .item:hover .name span { background-color:#41abce; }
+			
+/* Buy Now */
+
+.buynow {
+	background:#293139 url(../images/base-buynow.jpg) top center no-repeat;
+	padding:45px 0px;
+	text-align:center;
+}
+	.buynow .btn {
+		font-size:16px;
+		padding:12px 20px;
+		line-height:46px;
+	}
+
+
+
+/* ========================= 5. Footer Section ========================= */
+
+#footer { padding:0px; }
+	#footer .header { margin-bottom:20px; }
+		#footer .header h4 {
+			font-size:18px;
+			font-weight:bold;
+			line-height:24px;
+			margin:0px;
+		}
+	#footer .half-column {
+
+
+	}
+	#footer .sep-border {
+		clear:both;
+		height:0px;
+	}
+	
+/* Subscribe */
+
+#footer .subscribe {
+	padding-right:30px;
+	border-right:1px solid #e0e0e0;
+}
+	#footer .subscribe form { margin:0px; }
+	#footer .subscribe input[type="text"] {
+		margin:0px;
+		width:72%;
+		margin-right:4px;
+	}
+
+/* About */
+
+#footer .about {
+	padding-top:50px;
+}
+		#footer .about .social li {
+			list-style-type:none;
+			display:inline;	
+		}
+			#footer .about .social li img {
+				width:32px;
+				height:32px;
+				margin-top:4px;
+			}
+			#footer .about .social li .tooltip.bottom { margin-top:10px; }
+		
+/* Copyright */
+
+#footer .copyright {
+	text-align:center;
+	padding:15px 0px;
+	font-size:13px;
+	color:#9a9a9a;
+}
+
+/* ========================= 6. CSS Hacks ========================= */
+
+.ie input[type="text"], input[type="password"], input[type="email"] { line-height:40px; }
+
+.ie #top { padding-top:0px; }
+.ie #top .slider {
+	height:500px;
+	margin-top:0px;
+	margin-bottom:-14px;
+	/*background:url(../images/base-slider2.png) no-repeat;*/
+}
+.ie #top .text { padding-top:0px; }
+.ie #top .text h4 {
+	font-size:22px;
+	line-height:28px;
+}
+.ie #top .text input { margin-bottom:15px; }
+
+.ie #main .features .item img { width:12%; }
+.ie #main .features .item .content { width:82%; }
+
+.ie #footer .subscribe input[type="text"] { width:66%; }
+
+/* IE7 */
+
+.ie7 #top .slider {
+	background:none;
+	padding:0px;
+	margin:0px 0px 0px;
+	padding-bottom:40px;
+	height:auto;
+}
+.ie7 #top .text input[type="text"] { width:92%; }
+
+.ie7 #main .projects .flex-control-nav { bottom:50px; }
+.ie7 #main .projects figure {
+	padding:0px;
+	border:0px;
+}
+
+.ie7 #footer .half-column {
+	border:0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+.ie #footer .subscribe input[type="text"] { width:58%; }

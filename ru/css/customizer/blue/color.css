@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6, a, a:visited { color:#41abce; }
+
+.btn {
+	background-color:#2186c6;
+	border:1px solid #2082c0;
+	text-shadow:1px 1px 1px #0b6aa5;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#3aa1e2), to(#2186c6));
+	background:-webkit-linear-gradient(top, #3aa1e2, #2186c6);
+	background:-moz-linear-gradient(top, #3aa1e2, #2186c6);
+	background:-o-linear-gradient(top, #3aa1e2, #2186c6);
+}
+.btn:hover {
+	background-color:#0078c3;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#1792e0), to(#0078c3));
+	background:-webkit-linear-gradient(top, #1792e0, #0078c3);
+	background:-moz-linear-gradient(top, #1792e0, #0078c3);
+	background:-o-linear-gradient(top, #1792e0, #0078c3);
+}
+
+.flex-control-paging li a { background:#b0d7ef; }
+.flex-control-paging li a:hover { background:#41abce; }
+.flex-control-paging li a.flex-active { background:#41abce; }
+
+#top .text ul li { background:url(base-slider-transparent.png) repeat; }
+
+#main .testimonials .item:hover .name { background:url(border-name-testimonials-hover.png) center center repeat-x; }
+#main .testimonials .item:hover .name span { background-color:#41abce; }

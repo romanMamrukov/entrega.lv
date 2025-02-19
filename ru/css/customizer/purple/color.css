@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6, a, a:visited { color:#c824d2; }
+
+.btn {
+	background-color:#970ba0;
+	border:1px solid #890791;
+	text-shadow:1px 1px 1px #5c0262;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#cb0dd7), to(#970ba0));
+	background:-webkit-linear-gradient(top, #cb0dd7, #970ba0);
+	background:-moz-linear-gradient(top, #cb0dd7, #970ba0);
+	background:-o-linear-gradient(top, #cb0dd7, #970ba0);
+}
+.btn:hover {
+	background-color:#7e0886;
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#b20bbc), to(#7e0886));
+	background:-webkit-linear-gradient(top, #b20bbc, #7e0886);
+	background:-moz-linear-gradient(top, #b20bbc, #7e0886);
+	background:-o-linear-gradient(top, #b20bbc, #7e0886);
+}
+
+.flex-control-paging li a { background:#f0a3f5; }
+.flex-control-paging li a:hover { background:#c824d2; }
+.flex-control-paging li a.flex-active { background:#c824d2; }
+
+#top .text ul li { background:url(base-slider-transparent.png) repeat; }
+
+#main .testimonials .item:hover .name { background:url(border-name-testimonials-hover.png) center center repeat-x; }
+#main .testimonials .item:hover .name span { background-color:#c824d2; }
